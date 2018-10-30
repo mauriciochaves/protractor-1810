@@ -1,0 +1,15 @@
+
+
+Sobre a questão da massa de testes
+
+1) Volta Backup => Golden Backup
+2) Conecta no banco e resolve (apaga, insere, consulta, atualiza)
+3) Integra com a API para criar Helpers (não são testes integrados)
+4) Dados dinâmicos
+
+5) Ambiente de PROD (MEO DEOS porque vc está testando em produção???)
+
+Preciso testar em PROD
+(Ok, vou usar dados dinâmicos)
+em 3 meses, vamos estragar a produção
+e viciar o ambiente, caso ocorra bugs, não nos responsabilizamos

@@ -1,0 +1,30 @@
+{
+  "name": "mark7",
+  "version": "1.0.0",
+  "description": "Projeto para testes do Mark7 com Protractor",
+  "main": "index.js",
+  "scripts": {
+    "test": "protractor conf.js",
+    "smoke": "protractor conf.js --grep='@smoke'",
+    "temp": "protractor conf.js --grep='@temp'",
+    "wdup": "webdriver-manager update"
+  },
+  "keywords": [
+    "qa",
+    "protractor",
+    "nodejs",
+    "javascript",
+    "jasmine",
+    "js",
+    "ninjahouse"
+  ],
+  "author": "Fernando Papito",
+  "license": "MIT",
+  "devDependencies": {
+    "jasmine": "^3.2.0",
+    "jasmine-spec-reporter": "^4.2.1",
+    "mongoose": "^5.3.6",
+    "protractor": "^5.4.1",
+    "protractor-jasmine2-html-reporter": "0.0.7"
+  }
+}
