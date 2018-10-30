@@ -12,6 +12,7 @@ pipeline {
                 sh "npm install webdriver-manager -g"
                 sh "npm run wdup"
                 sh "npm test"
+                allure includeProperties: false, jdk: '', results: [[path: 'allure-results']]
             }
         }
     }
