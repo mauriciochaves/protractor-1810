@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Report') {
             agent {
-                docker { image 'mave:3-alpine' }
+                docker { image 'maven:3-alpine' }
             }
             steps {
                 allure includeProperties: false, jdk: '', results: [[path: 'allure-results']]
