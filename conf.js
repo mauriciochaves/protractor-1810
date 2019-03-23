@@ -2,7 +2,8 @@
 
 exports.config = {
     //directConnect: true,
-    seleniumAddress: 'http://selenium_server:4444/wd/hub',
+    //seleniumAddress: 'http://selenium_server:4444/wd/hub',
+    seleniumAddress: 'http://172.18.0.1:4444/wd/hub',
     framework: 'jasmine2',
     specs: ['specs/**-spec.js'],
     baseUrl: 'https://mark7.herokuapp.com',
