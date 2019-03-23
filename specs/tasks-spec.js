@@ -60,35 +60,35 @@ describe('quando tento cadastradar uma tarefa', () => {
     })
 })
 
-// describe('quando eu apago um tarefa', () => {
+describe('quando eu apago um tarefa', () => {
 
-//     var newTask = { title: "Tarefa para ser removida", tags: ['apagar', 'temp'], createdBy: null }
+    var newTask = { title: "Tarefa para ser removida", tags: ['apagar', 'temp'], createdBy: null }
 
-//     beforeAll(async () => {
-//         await tasksDb.deleteByName(newTask.title).then(res => console.log(res));
+    beforeAll(async () => {
+        await tasksDb.deleteByName(newTask.title).then(res => console.log(res));
 
-//         await usersDb.getByEmail("tasks@teste.com.br").then((user) => {
-//             newTask.createdBy = user._id;
-//         });
+        await usersDb.getByEmail("tasks@teste.com.br").then((user) => {
+            newTask.createdBy = user._id;
+        });
 
-//         await tasksDb.addTask(newTask);
-//         login_page.go();
-//         login_page.with("tasks@teste.com.br", "123456");
-//     });
+        await tasksDb.addTask(newTask);
+        login_page.go();
+        login_page.with("tasks@teste.com.br", "123456");
+    });
 
-//     it('então está tarefa não deve ser exibida na lista', () => {
-//         tasks_page.getItem(newTask.title);
-//         // Exemplo com JQuery
-//         // $('tr:contains("removida")').find('#delete-button').click();
+    it('então está tarefa não deve ser exibida na lista', () => {
+        tasks_page.getItem(newTask.title);
+        // Exemplo com JQuery
+        // $('tr:contains("removida")').find('#delete-button').click();
 
-//         // Desafio: Implementar a remoção com sucesso
-//         // E verificar se a task foi removida na lista
+        // Desafio: Implementar a remoção com sucesso
+        // E verificar se a task foi removida na lista
 
-//         // Entrega: email para: instrutor@ninjahouse.com.br com assunto: Protractor 1810 - Desafio
-//         // Por favor mandar no formato ZIP sem a pasta Node Modules
-//         // Se quiser mandar via git, basta informar o link no corpo do email
+        // Entrega: email para: instrutor@ninjahouse.com.br com assunto: Protractor 1810 - Desafio
+        // Por favor mandar no formato ZIP sem a pasta Node Modules
+        // Se quiser mandar via git, basta informar o link no corpo do email
 
-//     });
-// });
+    });
+});
 
 
